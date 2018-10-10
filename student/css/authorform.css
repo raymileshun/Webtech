@@ -1,0 +1,33 @@
+body{
+    background-color: royalblue;
+}
+
+table{
+    width: 100%;
+}
+
+.menuButton{
+    font-style: italic;
+    border: 2px solid brown;
+    text-align: center;
+    margin: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.menuButton:HOVER{
+    background:wheat;
+}
+
+#content{
+    font-style: oblique;
+    background: crimson;
+}
+
+.form:HOVER{
+    background: #000;
+}
+
+.formButton:HOVER{
+    background:rebeccapurple;
+}

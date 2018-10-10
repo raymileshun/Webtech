@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/authorform.css" type="text/css">
 </head>
 <body>
 <div id="header">
     <div id="banner">
         <div id="menuBar">
-            <table width="100%">
+            <table>
                 <tr>
                     <td>Library</td>
                     <td><span class="menuButton"><a href="index.html">Home</a></span></td>
@@ -22,21 +23,21 @@
 </div>
 <div id="content">
     <form action="addAuthor" method="post">
-        <table>
+        <table class="authorTable">
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="name" required="required" autofocus/></td>
+                <td><input type="text" name="name" required="required" autofocus class="form"/></td>
             </tr>
             <tr>
                 <td>Nationality</td>
-                <td><input type="text" name="nationality" required="required"/></td>
+                <td><input type="text" name="nationality" required="required" class="form"/></td>
             </tr>
             <tr>
                 <td>Birthdate</td>
-                <td><input type="date" name="birthDate"/></td>
+                <td><input type="date" name="birthDate" class="form"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Add Author"></td>
+                <td><input type="submit" value="Add Author" class="formButton"></td>
             </tr>
         </table>
 

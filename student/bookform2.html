@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/bookform.css" type="text/css">
 </head>
 <body>
 <div id="header">
     <div id="banner">
         <div id="menuBar">
-            <table width="100%">
+            <table>
                 <tr>
                     <td>Library</td>
                     <td><span class="menuButton"><a href="index.html">Home</a></span></td>
@@ -22,36 +23,36 @@
 </div>
 <div id="content">
     <form action="addBook" method="post">
-    <table>
-        <tr>
+    <table class="innertable">
+        <tr class="row">
             <td>title</td>
             <td><input type="text" name="title" required="required" autofocus></td>
         </tr>
-        <tr>
+        <tr class="row">
             <td>Genre</td>
             <td><select name="Genre" required="required">
                 <option value="sci-fi">Scifi</option>
                 <option value="Thriller">Thriller</option>
             </select></td>
         </tr>
-        <tr>
+        <tr class="row">
             <td>Author</td>
             <td><input type="password" name="author" required="required"/></td>
         </tr>
-        <tr>
+        <tr class="row">
             <td>Quantity</td>
             <td><input type="number" name="quantity"/></td>
         </tr>
-        <tr>
+        <tr class="row">
             <td>Available</td>
             <td><input type="checkbox" name="available"/></td>
         </tr>
-        <tr>
+        <tr class="row">
             <td>Publisher</td>
             <td><input type="email" name="publisher"/></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Add Book"></td>
+            <td><input type="submit" value="Add Book" class="addbook"></td>
         </tr>
     </table>
 

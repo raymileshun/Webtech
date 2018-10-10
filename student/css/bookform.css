@@ -1,0 +1,32 @@
+table{
+    width:100%;
+}
+a:link{
+    color:green;
+    font-style: normal;
+}
+a:visited{
+    color: gold;
+    font-style: italic;
+}
+.menuButton:HOVER{
+    background:brown;
+}
+
+.innertable{
+    background: wheat;
+    border:2px yellow double;
+}
+
+.addbook{
+    position: absolute;
+    margin-left: 900px;
+    top: 110px;
+}
+.addbook:HOVER{
+    background:yellow;
+}
+
+.row:HOVER{
+    background: cadetblue;
+}
