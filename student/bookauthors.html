@@ -1,0 +1,15 @@
+<script>
+    $.getJSON('authors', function(data){
+        var table= $('<table id="authorsTable"></table>');
+        table.append('')
+
+        $.each(data, function(key,value){
+            var row=$('<tr></tr>');
+            var nameCell
+
+            row.append(nameCell);
+            table.append(row);
+        });
+      $("#content").append(table);
+    })
+</script>

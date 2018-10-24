@@ -3,6 +3,26 @@
 	<meta charset="UTF-8">
 	<title>Endless Lorem Ipsum</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="application/javascript" src="js/index.js"></script>
+	<script>
+		alert("fos");
+	</script>
+	<script>
+		$(document).ready(function() {
+            $.each($(".menuButton"), function (mbIndex, mbValue) {
+                $(mbValue).click(function (event) {
+                    event.preventDefault();
+                    if (!($(this).find("a").attr("href") == "index.html")) {
+                        $("#content").load($(this).find('a').attr("href"));
+
+                    } else {
+                        open("index.html", "_self");
+                    }
+                });
+            });
+        });
+	</script>
 </head>
 <body onscroll="loremScroll()">
 <div id="everything">
