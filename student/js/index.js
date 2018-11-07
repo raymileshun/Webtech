@@ -3,16 +3,50 @@
         $('p').click(function () {
             $(this).hide();
         })
+
+
+
+        	$(function (){
+        		$('form').on('submit', function(e) {
+
+        			e.preventDefault();
+
+
+        		$.ajax(
+        			{
+        				type: 'post',
+        				url: 'addAuthor',
+        				data: $('form').serialize(),
+        				success: function(data) {
+        					openAuthors();
+        				},
+        				error: function() {
+        					alert("oops");
+        				}
+
+
+        			}
+
+        			)
+
+
+
+
+        		})
+
+
+        	})
+
+
+
+
+
+
     });
 
 
 
-$(document).ready(function() {
-    //itt htmlben egy id-t adott egy gombnak és arra hivatkozik
-    $('#button').click(function(){
-        $("p").css("color","red")
-            .slideUp(2000)
-            .slideDown(2000);
-    })
-});
+
+
+
 
